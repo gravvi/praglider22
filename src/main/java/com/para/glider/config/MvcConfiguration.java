@@ -50,9 +50,9 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
 		CommonsMultipartResolver resolver = new CommonsMultipartResolver();
 
 		//Set the maximum allowed size (in bytes) for each individual file.
-		resolver.setMaxUploadSize(5242880);//5MB
-		resolver.setMaxUploadSizePerFile(7894562);
-		resolver.setMaxUploadSizePerFile(9000);
+		
+		resolver.setMaxUploadSizePerFile(7340032);// 7 MiB
+		
 		//You may also set other available properties.
 
 		return resolver;
